@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Club - Events</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">🎵 Music Club</a>
+    <button class="hamburger" onclick="toggleMenu(this)" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html" class="active">Events</a>
+      <a href="activities.html">Activities</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>Upcoming Events 📅</h1>
+    <p>Join us for music, fun, and new friends️🎉</p>
+  </div>
+
+  <!-- EVENTS -->
+  <section class="events">
+    <div class="event-list">
+
+      <div class="event-card highlight" onclick="openModal('Acoustic Jam Night', 'March 2, 2025 — 7:00 PM')">
+        <div class="event-icon">🎸</div>
+        <h3>Acoustic Jam Night</h3>
+        <p class="event-date">📅 March 2, 2025 — 7:00 PM</p>
+        <p>A relaxed evening for acoustic players of all levels. Bring your guitar or just come to listen!️</p>
+        <span class="event-badge">Jam Session</span>
+        <div class="register-hint">👆 Click to Register</div>
+      </div>
+
+      <div class="event-card highlight" onclick="openModal('Piano Workshop', 'March 20, 2025 — 3:00 PM')">
+        <div class="event-icon">🎹</div>
+        <h3>Piano Workshop</h3>
+        <p class="event-date">📅 March 20, 2025 — 3:00 PM</p>
+        <p>Learn basic chords and simple improvisation. Great for beginners!</p>
+        <span class="event-badge">Workshop</span>
+        <div class="register-hint">👆 Click to Register</div>
+      </div>
+
+      <div class="event-card highlight" onclick="openModal('Jazz &amp; Blues Evening', 'April 22, 2025 — 8:00 PM')">
+        <div class="event-icon">🎺</div>
+        <h3>Jazz &amp; Blues Evening</h3>
+        <p class="event-date">📅 April 22, 2025 — 8:00 PM</p>
+        <p>A cozy night of live jazz and blues. Candles, drinks, and great music!</p>
+        <span class="event-badge">Performance</span>
+        <div class="register-hint">👆 Click to Register</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- REGISTRATION MODAL -->
+  <div id="registerModal" class="modal-overlay" onclick="closeModalOutside(event)">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-header">
+        <div class="modal-icon">🎵</div>
+        <h2 id="modal-event-name">Event Name</h2>
+        <p id="modal-event-date" class="modal-date"></p>
+      </div>
+      <div class="modal-body">
+        <h3>Đăng ký tham gia</h3>
+        <input id="reg-name"  type="text"  placeholder="Họ và tên *" />
+        <input id="reg-email" type="email" placeholder="Email *" />
+        <input id="reg-phone" type="tel"   placeholder="Số điện thoại" />
+        <textarea id="reg-note" placeholder="Ghi chú thêm (không bắt buộc)..."></textarea>
+        <button class="modal-submit" onclick="submitRegister(this)">Đăng ký ngay 🎶</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>🎵 Music Club </p>
+    <div class="footer-links">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
