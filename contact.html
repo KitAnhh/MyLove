@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Club - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">🎵 Music Club</a>
+    <button class="hamburger" onclick="toggleMenu(this)" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="activities.html">Activities</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>Contact Us ✉️</h1>
+    <p>We would love to hear from you❤️</p>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <div class="contact-info">
+      <h2>Get In Touch</h2>
+      <p>Have questions? Send us a message and we will get back to you within 24 hours.</p>
+      <p>📍 Tòa Gamma, Trường Đại học FPT Cần Thơ, Số 600 Nguyễn Văn Cừ, Phường An Bình, Thành phố Cần Thơ</p>
+      <p>✉️ Artclub@musicclub.com</p>
+      <p>📞 +84 909090909</p>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send a Message</h3>
+      <input id="input-name"  type="text"  placeholder="Your Name" />
+      <input id="input-email" type="email" placeholder="Your Email" />
+      <textarea id="input-msg" placeholder="Your Message..."></textarea>
+      <button onclick="sendMessage(this)">Send Message</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+ <footer>
+    <p>🎵 Music Club </p>
+    <div class="footer-links">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
